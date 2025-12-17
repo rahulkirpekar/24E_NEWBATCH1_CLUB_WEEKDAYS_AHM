@@ -1,0 +1,159 @@
+Exception:- Abnormal Scenario. / Exception things.
+------------
+
+1. ArithmeticException:-
+------------------------------
+	10 / 0 ;// ArithmeticException---create object---code crashed
+
+2. ArrayIndexoutofBoundException:-
+-------------------------------------- 
+
+	int a[] = new int[5];// a[0],a[1],a[2],a[3],a[4]
+
+	a[5] = 100;// ArrayIndexoutofBoundException
+
+3. NullpointerException :-
+---------------------------------
+	String name = null;
+	SOP(name.length());// NullpointerException
+
+4. NumberFormateException :-
+-----------------------------
+
+	String value = "a1b2c3";// 
+	SOP(value+200);// abc200
+	int no = Integer.parseInt(value);// NumberFormateException
+	SOP(no+200);// 323
+
+5. ClassCastException:-
+-------------------------
+		A
+		|
+	-----------------
+	|		|
+	B		C
+
+	A obj = new C();
+
+	B objB = (B)obj;// ClassCastException
+
+6. StringIndexoutofBoundException:-:-
+----------------------------------------
+
+		//     01234
+	String name = "royal";
+	SOP(name.charAt(5));// StringIndexoutofBoundException
+---------------------------------------------------------------------------------------------
+		Type of Exception
+		-----------------
+1. Checked Exception			2. UnChecked Exception
+---------------------			---------------------
+compiletime Exception			  Runtime Exception---Memory allocation---raise-->Runtime Exception
+----------------------			---------------------
+     |						|
+ compiler					jvm
+
+---------------------------------------------------------------------------------------------
+
+		Hierarchy of Exception
+		----------------------
+
+			Object
+			  |
+		      Throwable(C)
+			  |
+	-------------------------------------------------
+	|						|--recoverable
+1. Error(Irrecoverable)				2. Exception(C)			
+							|
+				---------------------------------------------------------
+				|-checked Exception					|-Unchecked Exception
+		--FileNotFoundException						  RuntimeException(C)		
+		--SQLException								|
+		--ClassNotFoundException					---ArithmeticException			
+		.....								---NullpointerException			
+		.....								---StringIndexoutofBoundException			
+		.....								---ArrayIndexoutofBoundException			
+		.....								---ClassCastException			
+										.....
+-----------------------------------------------------------------------------------------------------------------------------
+
+Exception Handling Concept:-
+----------------------------
+
+	try
+	{
+		// code ---raise exception
+	}catch()
+	{
+		// catch Block Handled Exception
+	}
+	...
+	....
+	...
+	
+
+
+
+	  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

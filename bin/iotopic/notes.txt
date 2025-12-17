@@ -1,0 +1,22 @@
+IO - InputStream(read) / OutputStream(write)
+---------------------------------------------
+
+	1. String:-
+	----------
+		1. Character oriented way
+		-----------------------------
+			1. FileWriter(write)
+			2. FileReader(read)	
+
+		2. byte oriented way
+		----------------------
+			1. FileOutpuStream(write)	
+			2. FileInputStream(read)
+
+	2. User Defined Object:-
+	-------------------------
+		1. byte oriented way
+		---------------------
+			1. FileOutpuStream(write)	
+			2. FileInputStream(read)
+

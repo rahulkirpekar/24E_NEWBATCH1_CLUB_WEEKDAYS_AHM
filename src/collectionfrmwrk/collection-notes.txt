@@ -1,0 +1,61 @@
+Array Limitations:-
+--------------------
+
+	int a[] = new int[5];
+
+	1. SIZE
+	2. TYPE
+
+Collection :- To overcome limitations of Array.
+--------------
+			Hierarchy of Collection
+			-------------------------
+
+				Iterable(I)-----------------------------------------------------------------------
+				   |										|
+				Collection(I)									|
+				   |										|
+				   |Data---(Values)								|
+				   |										|
+	---------------------------------------------------------						|
+	|			   |				|						|(Key,Value)
+      List(I)			Set(I)			    Queue(I)					       Map(I)
+	|			   |				|						|	
+AbstractList(AC)	     AbstractSet(AC)		AbstractQueue(AC)				  AbstractMap(AC)
+	|			   |				|						|
+--ArrayList(C)		--HashSet(C)			--PriorityQueue(C)				--HashMap(C)
+--LinkedList(C)		--LinkedHashSet(C)								--LinkedHashMap(C)
+--Vector(C)		--TreeSet(C)									--TreeMap(C)
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

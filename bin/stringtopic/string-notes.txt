@@ -1,0 +1,91 @@
+String(Multiple characters):-
+-----------------------------
+
+Scanner :-
+--------------
+	1. next();// Single word
+	2. nextLine();// Single Line -- Multiple words
+---------------------------------------------------------------------------------------------------
+		Ways of String Operation in Java
+		--------------------------------
+
+1. ImmutableWay					2. MutableWay	
+----------------				----------------
+===> String(class)				===> StringBuilder(class)
+						===> StringBuffer(class)
+----------------------------------------------------------------------------------------------
+
+1. ImmutableWay(String):-
+-------------------------
+
+	String class is Special class----Provide Immutable Behaviour 
+	---------------------------------
+		1. final class
+		2. object creation ---"By String literal way"
+		
+	
+	1. By String literal way [ RAM---->"HEAP"----->SCP--[String Constant Pool] ]:-
+	---------------------------------------------------------------------------
+
+		String name1 = "royal";
+		String name2 = "technosoft";
+		String name3 = name1;
+		String name4 = "royal";
+
+				//royaltechnosoft
+		String name5 = name1 + name2;// royaltechnosoft
+
+		String name6 = "technosoft";
+
+String Object Equality:-
+------------------------
+
+	1. referenceBased(==)			2. valueBased(equals())
+	----------------------			------------------------
+	SOP(name1==name2);//false		SOP(name1.equals(name2));// false
+	SOP(name1==name3);//true		SOP(name1.equals(name3));// true
+	SOP(name1==name4);//true		SOP(name1.equals(name4));// true
+	SOP(name1==name5);//false		SOP(name1.equals(name5));// false
+	SOP(name1==name6);//false		SOP(name1.equals(name6));// false
+
+	SOP(name2==name6);//true		SOP(name2.equals(name6));// true
+--------------------------------------------------------------------------------------------------------------------------------------
+	2.By new Keyword way:-[ RAM---->"HEAP"]
+	-------------------------------------------------
+	
+		String name1 = new String("royal");
+		String name2 = new String("technosoft");
+		String name3 = new String("royal");
+		String name4 = name1;
+
+
+	1. referenceBased(==)			2. valueBased(equals())
+	----------------------			------------------------
+	SOP(name1==name2);// false		SOP(name1.equals(name2));// false
+	SOP(name1==name3);// false		SOP(name1.equals(name3));// true
+	SOP(name1==name4);// true		SOP(name1.equals(name4));// true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
