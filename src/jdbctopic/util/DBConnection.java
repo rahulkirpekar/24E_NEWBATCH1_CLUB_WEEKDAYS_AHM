@@ -2,18 +2,19 @@ package jdbctopic.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DBConnection 
 {
 	// 1. Make creadentials
 	private static final String URLNAME          ="jdbc:mysql://localhost:3306/rocketdb";
-	private static final String DRIVERCLASS      ="com.mysql.jdbc.Driver";
+	private static final String DRIVERCLASS      ="com.mysql.cj.jdbc.Driver";
 	private static final String USERNAME        	="root";
 	private static final String PASSWORD			="root";	
 	
 	// 2. create getConnection method
-	public static void getConnection() 
+	public static Connection getConnection() 
 	{
 		Connection conn = null;
 		try 
@@ -38,11 +39,6 @@ public class DBConnection
 		{
 			e.printStackTrace();
 		}
-	}
-	
-	public static void main(String[] args) 
-	{
-		DBConnection.getConnection();
-		
+		return conn;
 	}
 }
